@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Result Portal</title>
+  <!-- google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- local-style -->
+  <link rel="stylesheet" href="app.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+    }
+
+    .header {
+      background: #0a3d62;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      width: 70%;
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #0a3d62;
+      font-size: 22px;
+      margin-bottom: 20px;
+      border-left: 5px solid #0a3d62;
+      padding-left: 10px;
+    }
+
+    .semester-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .sem-btn {
+      flex: 1 1 200px;
+      text-decoration: none;
+      background: #0a3d62;
+      color: white;
+      padding: 14px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .sem-btn:hover {
+      background: #062c47;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top  bg-light  ">
+    <div class="container">
+      <div class="logo-div"><img class="logo" src="img/KBN University Logo Final.avif" alt=""></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Khaja Bandanawaz University</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="about.html">About us</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Examination
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="examschedule.html">exam schedule</a></li>
+                <li><a class="dropdown-item" href="resul.html">Result</a></li>
+
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                programs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="courses.html">Faculty of Engineering and Technology </a></li>
+                <li><a class="dropdown-item" href="courseFoms.html">faculty of medical and science!</a></li>
+                <li><a class="dropdown-item" href="errormaintanece.html">faculty of arts and sciencs</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Academics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="acadmics.html">acadmics calender</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="eventDetails.html">Happnings</a>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Department's
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="cse.html">computer Science Engineering </a></li>
+                  <li><a class="dropdown-item" href="cse.html">Civil Engineering</a></li>
+                  <li><a class="dropdown-item" href="cse.html">Mechanical Engineering </a></li>
+                  <li><a class="dropdown-item" href="cse.html">Electronic & Communication Engineering </a></li>
+                  <li><a class="dropdown-item" href="cse.html">Automobile Engineering</a></li>
+                  <li><a class="dropdown-item" href="cse.html">Electrical & Eloctronics Engineering</a></li>
+                </ul>
+              </li> -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <hr class="dropdown-divider">
+            <li class="nav=item">
+              <a class="btn   btn-sm Admission-open mt-1" href="addmission pdf.pdf" role="button">Admission open</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Result Portal</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      body {
+        background: #eef2f7;
+        /* padding: 40px 0; */
+        padding-top: 40px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .header h1 {
+        padding-top: 30px;
+        font-size: 32px;
+        font-weight: 700;
+        color: #f3f3f3;
+        letter-spacing: 1px;
+      }
+
+      .header p {
+        font-size: 15px;
+        color: #d7dee8;
+      }
+
+      .section {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        padding: 35px;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
+
+      .section:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+        color: #0a3d62;
+        border-left: 5px solid #0a3d62;
+        padding-left: 12px;
+      }
+
+      .semester-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+      }
+
+      .sem-card {
+        background: #f1f5f9;
+        padding: 18px;
+        text-align: center;
+        border-radius: 10px;
+        color: #0a3d62;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        transition: 0.3s;
+        border: 1px solid #d1d5db;
+      }
+
+      .sem-card:hover {
+        background: #0a3d62;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>University Result Portal</h1>
+      <p>Check your results</p>
+    </div>
+
+    <!-- FACULTY OF ENGINEERING -->
+    <div class="section">
+      <h2>Faculty of Engineering</h2>
+      <div class="semester-grid">
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">1st Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">2nd Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">3rd Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">4th Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">5th Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">6th Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">7th Semester</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">8th Semester</a>
+      </div>
+    </div>
+
+    <!-- FACULTY OF MEDICAL SCIENCE -->
+    <div class="section">
+      <h2>Faculty of Medical Sciences</h2>
+      <div class="semester-grid">
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">1st Year</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">2nd Year</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">3rd Year</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">4th Year</a>
+        <a class="sem-card" href="RESULT PDF.pdf" target="_blank">Final Year</a>
+      </div>
+    </div>
+
+
+
+  </body>
+  <footer>
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footerOne col-md-6 col-lg-3">
+            <h5> <u>About us</u></h5>
+            <p>The main vision of our institution is to constantly monitor the quality of education & strive towards
+              achieving the transformation of this institution into a novel institution in this area.</p>
+            <a class="faceBook" href="https://www.facebook.com/KBNUniversity"><i style="color:blue;font-size: 30px;"
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://in.linkedin.com/company/kbnu"> <i style="color:blue;font-size: 30px;"
+                class="fa-brands fa-linkedin"></i></a>
+
+          </div>
+
+
+          <div class="footerThree col-md-6 col-lg-3 ">
+            <h5> <u>Contact us</u></h5>
+            <div class="">
+              <div class="row">
+                <div class="mb-2"><i class="fa-solid fa-phone"></i> 9967847373</div>
+                <div class="mb-2"><i class="fa-solid fa-envelope"></i> example@gmail.com</div>
+                <div class=""><i class="fa-solid fa-location-dot"></i>Kbn Collage Road 585108</div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="footerTwo col-md-6 col-lg-3 ">
+            <h5> <u>Our links</u></h5>
+            <h6><a href="index.html">Home</a></h6>
+            <h6><a href="about.html">About</a></h6>
+            <h6><a href="contact.html">Contact</a></h6>
+            <h6><a href="gallery.html">gallery</a></h6>
+          </div>
+
+
+
+          <!-- <div class="footerFour col-md-6 col-lg-3 ">
+            <h5>  <u>Admission open</u></h5>
+
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- copyright  -->
+    <div class="container-fluid copy bg-dark ">
+      <div class=" container-fluid ">
+
+        <div class="footer" style="color: #ffffff; text-align: center;">© 2025 khajaBandanawaz University • All Rights
+          Reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  </html>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- local js  -->
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -16,7 +16,7 @@ filterContainer.addEventListener("click", (event) =>{
       if(item.classList.contains(filterValue) || filterValue === 'all'){
         item.classList.remove("hide");
          item.classList.add("show");
-      }
+      } 
       else{
         item.classList.remove("show");
         item.classList.add("hide");
@@ -24,3 +24,17 @@ filterContainer.addEventListener("click", (event) =>{
      });
   }
 });
+
+
+
+    const marqueeTrack = document.getElementById('marqueeTrack');
+    const modals = document.querySelectorAll('.modal');
+
+    modals.forEach(modal => {
+      modal.addEventListener('show.bs.modal', () => {
+        marqueeTrack.classList.add('paused');
+      });
+      modal.addEventListener('hidden.bs.modal', () => {
+        marqueeTrack.classList.remove('paused');
+      });
+    });

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submitted</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0fdf4;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #16a34a;
+    }
+
+    p {
+      color: #444;
+      margin: 10px 0 20px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #16a34a;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #15803d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>✔️ Form Submitted Successfully</h1>
+    <p>Your data has been saved. We will reach you soon.</p>
+    <button onclick="history.back()">Go Back</button>
+  </div>
+
+</body>
+
+</html>
